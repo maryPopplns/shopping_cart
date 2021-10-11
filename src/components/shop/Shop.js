@@ -1,20 +1,27 @@
+import { useEffect, useState } from 'react';
+import Planet from '../planet/Planet.js';
 import './shop.css';
 
 export default function Shop() {
-  const PLANET_IMAGES = [
-    'earth.jpg',
-    'jupiter.jpg',
-    'mars.jpg',
-    'mercury.jpg',
-    'neptune.jpg',
-    'saturn.jpg',
-    'uranus.jpg',
-    'venus.jpg',
-  ];
+  const [planets, setPlanets] = useState([]);
 
-  return (
-    <>
-      <div>hi</div>
-    </>
-  );
+  useEffect(() => {
+    const PLANET_IMAGES = [
+      'earth',
+      'jupiter',
+      'mars',
+      'mercury',
+      'neptune',
+      'saturn',
+      'uranus',
+      'venus',
+    ];
+    PLANET_IMAGES.forEach((planet, index) => {
+      setPlanets((prevState) => {
+        return [...prevState, <Planet key={index} planet={planet} />];
+      });
+    });
+  }, [setPlanets]);
+
+  return <main id='shop_main'>{planets}</main>;
 }

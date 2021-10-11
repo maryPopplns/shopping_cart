@@ -7,7 +7,7 @@ import Shop from './components/shop/Shop.js';
 import Cart from './components/cart/Cart.js';
 
 function App() {
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
   // will be pushing object with the product name, price, and the amount of units
 
   return (
