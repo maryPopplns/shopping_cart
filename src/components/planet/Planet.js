@@ -20,10 +20,15 @@ export default function Planet(props) {
     venus: venus,
     uranus: uranus,
   };
+  const PLANET_STYLE = {
+    fontSize: '2em',
+    fontFamily: '"Asap", sans-serif',
+    marginTop: '.5em',
+  };
   const PLANET_PATH = PLANETS[planet];
   return (
     <div className='planet_container'>
-      <h2>{planet}</h2>
+      <h2 style={PLANET_STYLE}>{planet}</h2>
       <img src={PLANET_PATH} alt={planet} className='planet_img' />
     </div>
   );
