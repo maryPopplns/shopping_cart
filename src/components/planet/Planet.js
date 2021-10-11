@@ -23,7 +23,7 @@ export default function Planet(props) {
   const PLANET_PATH = PLANETS[planet];
   return (
     <div className='planet_container'>
-      <div>{props.data}</div>
+      <h2>{planet}</h2>
       <img src={PLANET_PATH} alt={planet} className='planet_img' />
     </div>
   );
