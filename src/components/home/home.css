@@ -1,0 +1,4 @@
+#homepage_main {
+  background-image: url('../../assets/galaxy.jpg');
+  height: calc(100vh - 80px);
+}
