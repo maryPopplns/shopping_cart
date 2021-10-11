@@ -12,6 +12,11 @@ export default function Header() {
         <li>
           <Link to='/shop'>Shop</Link>
         </li>
+        <li>
+          <Link to='/cart'>
+            <i class='fas fa-shopping-cart'></i>
+          </Link>
+        </li>
       </nav>
     </header>
   );
