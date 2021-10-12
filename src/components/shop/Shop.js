@@ -8,6 +8,10 @@ export default function Shop() {
   const [planets, setPlanets] = useState([]);
   const { path, url } = useRouteMatch();
 
+  function hide_scroll() {
+    document.body.style.overflow = 'hidden';
+  }
+
   useEffect(() => {
     const PLANET_IMAGES = [
       'earth',
@@ -23,8 +27,8 @@ export default function Shop() {
       setPlanets((prevState) => {
         return [
           ...prevState,
-          <Link to={`${url}/${planet}`}>
-            <PlanetPreview key={index} planet={planet} />
+          <Link onClick={hide_scroll} key={index} to={`${url}/${planet}`}>
+            <PlanetPreview planet={planet} />
           </Link>,
         ];
       });
