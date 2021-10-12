@@ -1,4 +1,4 @@
-import './planet.css';
+import './planetPreview.css';
 import earth from '../../assets/earth.jpg';
 import jupiter from '../../assets/jupiter.jpg';
 import mars from '../../assets/mars.jpg';

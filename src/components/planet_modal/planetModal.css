@@ -1,0 +1,13 @@
+#planet_modal {
+  position: fixed; /* or absolute */
+  top: 81px;
+  /* left: calc(50% - 35em); */
+  background: white;
+  min-height: 50em;
+  height: calc(100vh - 81px);
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,7 @@
 import { useRouteMatch, Switch, Route, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import PlanetPreview from '../planet_preview/PlanetPreview.js';
+import PlanetModal from '../planet_modal/PlanetModal.js';
 import './shop.css';
 
 export default function Shop() {
@@ -35,8 +36,7 @@ export default function Shop() {
       <main id='shop_main'>{planets}</main>
       <Switch>
         <Route path={`${path}/:planetId`}>
-          {/* <div></div> */}
-          {/* <Topic /> */}
+          <PlanetModal />
         </Route>
       </Switch>
     </>

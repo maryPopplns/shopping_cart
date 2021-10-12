@@ -1,4 +1,6 @@
 #homepage_main {
+  position: relative;
+  top: 79px;
   background: url('../../assets/galaxy.jpg') no-repeat center;
   height: calc(100vh - 81px);
 }

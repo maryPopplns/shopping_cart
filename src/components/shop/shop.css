@@ -1,4 +1,6 @@
 #shop_main {
+  position: relative;
+  top: 79px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
