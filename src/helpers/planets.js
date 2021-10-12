@@ -8,25 +8,25 @@ import venus from '../assets/venus.jpg';
 import uranus from '../assets/uranus.jpg';
 
 const PLANET_IMAGES = {
-  earth: earth,
-  jupiter: jupiter,
-  mars: mars,
-  mercury: mercury,
-  neptune: neptune,
-  saturn: saturn,
-  venus: venus,
-  uranus: uranus,
+  Earth: earth,
+  Jupiter: jupiter,
+  Mars: mars,
+  Mercury: mercury,
+  Neptune: neptune,
+  Saturn: saturn,
+  Uranus: venus,
+  Venus: uranus,
 };
 
 const PLANET_COSTS = {
-  earth: 1,
-  jupiter: 2,
-  mars: 3,
-  mercury: 4,
-  neptune: 5,
-  saturn: 6,
-  venus: 7,
-  uranus: 8,
+  Earth: 1,
+  Jupiter: 2,
+  Mars: 3,
+  Mercury: 4,
+  Neptune: 5,
+  Saturn: 6,
+  Uranus: 7,
+  Venus: 8,
 };
 
 export { PLANET_IMAGES, PLANET_COSTS };

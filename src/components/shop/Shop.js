@@ -14,14 +14,14 @@ export default function Shop() {
 
   useEffect(() => {
     const PLANET_IMAGES = [
-      'earth',
-      'jupiter',
-      'mars',
-      'mercury',
-      'neptune',
-      'saturn',
-      'uranus',
-      'venus',
+      'Earth',
+      'Jupiter',
+      'Mars',
+      'Mercury',
+      'Neptune',
+      'Saturn',
+      'Uranus',
+      'Venus',
     ];
     PLANET_IMAGES.forEach((planet, index) => {
       setPlanets((prevState) => {
