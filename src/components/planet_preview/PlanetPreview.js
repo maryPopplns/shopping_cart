@@ -1,25 +1,9 @@
 import './planetPreview.css';
-import earth from '../../assets/earth.jpg';
-import jupiter from '../../assets/jupiter.jpg';
-import mars from '../../assets/mars.jpg';
-import mercury from '../../assets/mercury.jpg';
-import neptune from '../../assets/neptune.jpg';
-import saturn from '../../assets/saturn.jpg';
-import venus from '../../assets/venus.jpg';
-import uranus from '../../assets/uranus.jpg';
+import PLANETS from '../../helpers/planets.js';
 
 export default function PlanetPreview(props) {
   const { planet } = props;
-  const PLANETS = {
-    earth: earth,
-    jupiter: jupiter,
-    mars: mars,
-    mercury: mercury,
-    neptune: neptune,
-    saturn: saturn,
-    venus: venus,
-    uranus: uranus,
-  };
+
   const PLANET_STYLE = {
     fontSize: '2em',
     fontFamily: '"Asap", sans-serif',
