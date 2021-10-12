@@ -1,18 +1,37 @@
 #planet_modal {
   position: fixed;
   top: 81px;
-  background: white;
-  min-height: 50em;
-  height: calc(100vh - 81px);
-  width: 100vw;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: calc(100vh - 81px);
+  /* min-height: 50em; */
+  background: black;
+  color: white;
 }
 
 .planet_img_modal {
   height: 25em;
   width: 25em;
+}
+
+.modal_title {
+  font-size: 3em;
+  margin: 1em;
+}
+
+.modal_cost {
+  margin: 1em;
+}
+
+.amount_input {
+  width: 3em;
+}
+
+.planet_modal_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
