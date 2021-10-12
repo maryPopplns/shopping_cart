@@ -1,7 +1,7 @@
 #planet_modal {
-  position: fixed; /* or absolute */
+  position: fixed;
   top: 81px;
-  /* left: calc(50% - 35em); */
+  /* bottom: calc(100% + 81px); */
   background: white;
   min-height: 50em;
   height: calc(100vh - 81px);
@@ -10,4 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.planet_model_back_arrow {
+  position: fixed;
+  right: 0.5em;
+  top: 2em;
+  font-size: 3em;
 }
