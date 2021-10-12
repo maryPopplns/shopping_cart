@@ -7,6 +7,12 @@
   width: 100vw;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.planet_img_modal {
+  height: 25em;
+  width: 25em;
 }

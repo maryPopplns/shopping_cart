@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import PLANETS from '../../helpers/planets.js';
+import { PLANET_IMAGES, PLANET_COSTS } from '../../helpers/planets.js';
 import './planetModal.css';
 
 export default function PlanetModal() {
@@ -26,7 +26,12 @@ export default function PlanetModal() {
         <i style={ICON_STYLE} className='far fa-arrow-alt-circle-left'></i>
       </Link>
       <div>{planetId}</div>
-      <img src={PLANETS[planetId]} alt={planetId} className='planet_img' />
+      <img
+        src={PLANET_IMAGES[planetId]}
+        alt={planetId}
+        className='planet_img_modal'
+      />
+      <div>${PLANET_COSTS[planetId]}.00</div>
     </div>
   );
 }

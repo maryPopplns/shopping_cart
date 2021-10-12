@@ -5,8 +5,13 @@
   align-items: center;
   margin: 1em;
   border: 1px solid white;
-  height: 30em;
+  height: 20em;
   width: 15em;
+  transition: transform 0.15s;
+}
+
+.planet_container:hover {
+  transform: scale(1.05);
 }
 
 .planet_img {
