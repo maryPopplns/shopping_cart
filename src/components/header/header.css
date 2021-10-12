@@ -12,6 +12,7 @@ header {
   left: 1em;
   color: white;
   font-size: 2em;
+  user-select: none;
 }
 
 #header_nav {

@@ -8,7 +8,7 @@ import saturn from '../../assets/saturn.jpg';
 import venus from '../../assets/venus.jpg';
 import uranus from '../../assets/uranus.jpg';
 
-export default function Planet(props) {
+export default function PlanetPreview(props) {
   const { planet } = props;
   const PLANETS = {
     earth: earth,
@@ -25,11 +25,11 @@ export default function Planet(props) {
     fontFamily: '"Asap", sans-serif',
     marginTop: '.5em',
   };
-  const PLANET_PATH = PLANETS[planet];
+
   return (
     <div className='planet_container'>
       <h2 style={PLANET_STYLE}>{planet}</h2>
-      <img src={PLANET_PATH} alt={planet} className='planet_img' />
+      <img src={PLANETS[planet]} alt={planet} className='planet_img' />
     </div>
   );
 }
