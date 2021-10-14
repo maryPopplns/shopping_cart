@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/header/Header.js';
 import Home from './components/home/Home.js';
@@ -17,26 +17,14 @@ function App() {
     Uranus: 0,
     Venus: 0,
   });
-  // will be pushing object with the product name, price, and the amount of units
-
-  function cartHandler(event) {
-    event.preventDefault();
-    const PLANET = event.target.getAttribute('planet');
-    const INPUT = +event.target.getAttribute('input');
-    setCart((prevState) => {
-      const UPDATED = prevState;
-      UPDATED[PLANET] = UPDATED[PLANET] + INPUT;
-      return UPDATED;
-    });
-  }
 
   return (
     <>
-      <Header />
+      <Header data={cart} />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/shop'>
-          <Shop cartHandler={cartHandler} />
+          <Shop setCart={setCart} />
         </Route>
         <Route path='/cart'>
           <Cart data={cart} />

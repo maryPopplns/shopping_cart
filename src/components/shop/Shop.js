@@ -40,7 +40,7 @@ export default function Shop(props) {
       <main id='shop_main'>{planets}</main>
       <Switch>
         <Route path={`${path}/:planetId`}>
-          <PlanetModal cartHandler={props.cartHandler} />
+          <PlanetModal setCart={props.setCart} />
         </Route>
       </Switch>
     </>

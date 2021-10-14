@@ -31,3 +31,17 @@ a {
   text-decoration: none;
   color: white;
 }
+
+#cart_count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 3em;
+  bottom: 2em;
+  color: white;
+  height: 1em;
+  width: 1em;
+  border: 1px solid white;
+  border-radius: 0.5em;
+}

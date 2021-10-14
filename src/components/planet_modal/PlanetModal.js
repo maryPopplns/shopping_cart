@@ -26,6 +26,17 @@ export default function PlanetModal(props) {
     setInputValue(event.target.value);
   }
 
+  function submitHandler(event) {
+    event.preventDefault();
+    const PLANET = event.target.getAttribute('planet');
+    const INPUT = +event.target.getAttribute('input');
+    props.setCart((prevState) => {
+      const UPDATED = { ...prevState };
+      UPDATED[PLANET] = UPDATED[PLANET] + INPUT;
+      return UPDATED;
+    });
+  }
+
   return (
     <div id='planet_modal'>
       <Link onClick={show_scroll} to='/shop' style={CONTAINER_STYLE}>
@@ -39,7 +50,7 @@ export default function PlanetModal(props) {
       />
       <div className='modal_cost'>${PLANET_COSTS[planetId]}.00</div>
       <form
-        onSubmit={props.cartHandler}
+        onSubmit={submitHandler}
         className='planet_modal_form'
         input={inputValue}
         planet={planetId}
