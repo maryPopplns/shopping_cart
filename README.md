@@ -6,4 +6,5 @@
  LEARNED
 </h2>
 
-- the basics of react router
+- practiced nested routes
+- improved my understanding of state && props
