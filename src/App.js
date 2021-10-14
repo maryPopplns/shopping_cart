@@ -7,15 +7,27 @@ import Shop from './components/shop/Shop.js';
 import Cart from './components/cart/Cart.js';
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState({
+    Earth: 0,
+    Jupiter: 0,
+    Mars: 0,
+    Mercury: 0,
+    Neptune: 0,
+    Saturn: 0,
+    Uranus: 0,
+    Venus: 0,
+  });
   // will be pushing object with the product name, price, and the amount of units
 
   function cartHandler(event) {
     event.preventDefault();
     const PLANET = event.target.getAttribute('planet');
-    const INPUT = event.target.getAttribute('input');
-    console.log(PLANET);
-    console.log(INPUT);
+    const INPUT = +event.target.getAttribute('input');
+    setCart((prevState) => {
+      const UPDATED = prevState;
+      UPDATED[PLANET] = UPDATED[PLANET] + INPUT;
+      return UPDATED;
+    });
   }
 
   return (

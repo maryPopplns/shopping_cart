@@ -50,7 +50,7 @@ export default function PlanetModal(props) {
           type='number'
           className='amount_input'
           onChange={inputChangeHandler}
-        ></input>
+        />
         <button>add to cart</button>
       </form>
     </div>
