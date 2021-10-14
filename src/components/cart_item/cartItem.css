@@ -1,0 +1,15 @@
+.cart_item_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+  border: 1px solid white;
+  height: 10em;
+  width: 20em;
+}
+
+.cart_planet_img {
+  height: 10em;
+  width: 10em;
+}

@@ -1,6 +1,7 @@
 #cart_main {
+  display: flex;
+  justify-content: center;
   position: relative;
   top: 81px;
   color: white;
-  /* border: 1px solid white; */
 }
