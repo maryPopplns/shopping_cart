@@ -4,7 +4,7 @@ import PlanetPreview from '../planet_preview/PlanetPreview.js';
 import PlanetModal from '../planet_modal/PlanetModal.js';
 import './shop.css';
 
-export default function Shop() {
+export default function Shop(props) {
   const [planets, setPlanets] = useState([]);
   const { path, url } = useRouteMatch();
 
@@ -40,7 +40,7 @@ export default function Shop() {
       <main id='shop_main'>{planets}</main>
       <Switch>
         <Route path={`${path}/:planetId`}>
-          <PlanetModal />
+          <PlanetModal cartHandler={props.cartHandler} />
         </Route>
       </Switch>
     </>

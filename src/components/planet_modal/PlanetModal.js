@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { PLANET_IMAGES, PLANET_COSTS } from '../../helpers/planets.js';
 import './planetModal.css';
 
-export default function PlanetModal() {
+export default function PlanetModal(props) {
   let { planetId } = useParams();
   const [inputValue, setInputValue] = useState(0);
 
@@ -26,10 +26,6 @@ export default function PlanetModal() {
     setInputValue(event.target.value);
   }
 
-  function formSubmitHandler(event) {
-    setInputValue(event.target.value);
-  }
-
   return (
     <div id='planet_modal'>
       <Link onClick={show_scroll} to='/shop' style={CONTAINER_STYLE}>
@@ -42,7 +38,12 @@ export default function PlanetModal() {
         className='planet_img_modal'
       />
       <div className='modal_cost'>${PLANET_COSTS[planetId]}.00</div>
-      <form onSumbit={formSubmitHandler} className='planet_modal_form'>
+      <form
+        onSubmit={props.cartHandler}
+        className='planet_modal_form'
+        input={inputValue}
+        planet={planetId}
+      >
         <input
           min='0'
           value={inputValue}
