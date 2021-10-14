@@ -27,6 +27,7 @@
 
 .amount_input {
   width: 3em;
+  text-align: center;
 }
 
 .planet_modal_form {
