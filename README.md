@@ -2,7 +2,7 @@
   Shopping Cart
 </h1>
 
-[Linked](https://marypopplns.github.io/shopping_cart/)
+[Link](https://marypopplns.github.io/shopping_cart/)
 
 <h2 >
  LEARNED
